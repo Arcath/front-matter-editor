@@ -1,0 +1,16 @@
+{
+  "name": "front-matter-editor",
+  "version": "0.0.0",
+  "description": "Edit your front matters with a gui!",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adam Laycock",
+  "license": "MIT",
+  "dependencies": {
+    "etch": "^0.12.2",
+    "gray-matter": "^2.1.1"
+  }
+}

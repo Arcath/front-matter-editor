@@ -1,0 +1,4 @@
+---
+layout: 'something'
+---
+Some content
