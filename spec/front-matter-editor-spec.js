@@ -38,7 +38,7 @@ describe('Front Matter Editor', function(){
       expect(frontMatterEditor.editorView.frontMatter.layout).toBe('something')
 
       frontMatterEditor.editorView.newFrontMatter.layout = 'another'
-      frontMatterEditor.editorView.save()
+      frontMatterEditor.editorView.saveFrontMatter()
 
       activeEditor = atom.workspace.getActiveTextEditor()
       contents = activeEditor.getText()
