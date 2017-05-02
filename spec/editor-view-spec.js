@@ -10,7 +10,7 @@ describe('Editor View', function(){
   })
 
   it('should set the value of the editors', function(){
-    editorView = new EditorView({
+    var editorView = new EditorView({
       frontMatter: {},
       content: ''
     })
@@ -25,7 +25,7 @@ describe('Editor View', function(){
     })
 
     runs(function(){
-      expect(editorView.refs.field_0.refs.input.getText()).toBe('foo')
+      expect(editorView.virtualNode.children[0].children[1].component.virtualNode.children[0].component.refs.input.getText()).toBe('foo')
     })
   })
 
@@ -46,7 +46,7 @@ describe('Editor View', function(){
 
     runs(function(){
       expect(editorView.saveable).toBe(false)
-      editorView.updateFrontMatter('test', 'bar')
+      editorView.updateFrontMatter(['test'], 'bar')
 
       expect(editorView.newFrontMatter.test).toBe('bar')
       expect(editorView.saveable).toBe(true)

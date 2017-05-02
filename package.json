@@ -6,11 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/Arcath/front-matter-editor",
   "keywords": [],
   "author": "Adam Laycock",
   "license": "MIT",
   "dependencies": {
     "etch": "^0.12.2",
-    "gray-matter": "^2.1.1"
+    "gray-matter": "^2.1.1",
+    "lodash": "^4.17.4"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
   }
 }
