@@ -4,7 +4,9 @@
   "description": "Edit your front matters with a gui!",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "https://github.com/Arcath/front-matter-editor",
   "keywords": [],
@@ -14,9 +16,11 @@
     "color": "^1.0.3",
     "etch": "^0.12.2",
     "gray-matter": "^2.1.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "snyk": "^1.192.0"
   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  }
+  },
+  "snyk": true
 }
